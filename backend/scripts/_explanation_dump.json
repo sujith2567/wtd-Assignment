@@ -1,0 +1,212 @@
+[
+  {
+    "label": "DEMO (CS2025001)",
+    "student_id": 1,
+    "response": {
+      "student_id": 1,
+      "roll_number": "CS2025001",
+      "student_name": "Alex Sharma",
+      "predicted_domain": "Software Development",
+      "confidence_score": 0.6963,
+      "ground_truth_domain": "Software Development",
+      "is_correct": true,
+      "is_noisy_case": false,
+      "class_probabilities": [
+        {
+          "domain": "Software Development",
+          "probability": 0.6963
+        },
+        {
+          "domain": "Technical Support & Cybersecurity",
+          "probability": 0.0837
+        },
+        {
+          "domain": "Data Science / AI",
+          "probability": 0.0804
+        },
+        {
+          "domain": "DevOps & Cloud Engineering",
+          "probability": 0.0765
+        },
+        {
+          "domain": "Quality Assurance & Testing",
+          "probability": 0.0631
+        }
+      ],
+      "top_contributing_factors": [
+        {
+          "keyword": "software",
+          "weight": 0.2419,
+          "direction": "weakly_supports",
+          "description": "Keyword/Skill 'software' provided strong positive evidence (+0.242) for Software Development."
+        },
+        {
+          "keyword": "software development",
+          "weight": 0.2419,
+          "direction": "weakly_supports",
+          "description": "Keyword/Skill 'software development' provided strong positive evidence (+0.242) for Software Development."
+        },
+        {
+          "keyword": "development",
+          "weight": 0.1518,
+          "direction": "weakly_supports",
+          "description": "Keyword/Skill 'development' provided strong positive evidence (+0.152) for Software Development."
+        },
+        {
+          "keyword": "react",
+          "weight": 0.1267,
+          "direction": "weakly_supports",
+          "description": "Keyword/Skill 'react' provided strong positive evidence (+0.127) for Software Development."
+        },
+        {
+          "keyword": "fastapi",
+          "weight": 0.0802,
+          "direction": "against",
+          "description": "Keyword/Skill 'fastapi' provided strong positive evidence (+0.080) for Software Development."
+        }
+      ],
+      "human_readable_summary": "Predicted as Software Development (confidence 70%) primarily due to: software, software development, development, react, fastapi.",
+      "model_version": "v1.0 (TF-IDF + Multinomial Logistic Regression)"
+    }
+  },
+  {
+    "label": "CLEAN (label == predicted)",
+    "student_id": 1,
+    "response": {
+      "student_id": 1,
+      "roll_number": "CS2025001",
+      "student_name": "Alex Sharma",
+      "predicted_domain": "Software Development",
+      "confidence_score": 0.6963,
+      "ground_truth_domain": "Software Development",
+      "is_correct": true,
+      "is_noisy_case": false,
+      "class_probabilities": [
+        {
+          "domain": "Software Development",
+          "probability": 0.6963
+        },
+        {
+          "domain": "Technical Support & Cybersecurity",
+          "probability": 0.0837
+        },
+        {
+          "domain": "Data Science / AI",
+          "probability": 0.0804
+        },
+        {
+          "domain": "DevOps & Cloud Engineering",
+          "probability": 0.0765
+        },
+        {
+          "domain": "Quality Assurance & Testing",
+          "probability": 0.0631
+        }
+      ],
+      "top_contributing_factors": [
+        {
+          "keyword": "software",
+          "weight": 0.2419,
+          "direction": "weakly_supports",
+          "description": "Keyword/Skill 'software' provided strong positive evidence (+0.242) for Software Development."
+        },
+        {
+          "keyword": "software development",
+          "weight": 0.2419,
+          "direction": "weakly_supports",
+          "description": "Keyword/Skill 'software development' provided strong positive evidence (+0.242) for Software Development."
+        },
+        {
+          "keyword": "development",
+          "weight": 0.1518,
+          "direction": "weakly_supports",
+          "description": "Keyword/Skill 'development' provided strong positive evidence (+0.152) for Software Development."
+        },
+        {
+          "keyword": "react",
+          "weight": 0.1267,
+          "direction": "weakly_supports",
+          "description": "Keyword/Skill 'react' provided strong positive evidence (+0.127) for Software Development."
+        },
+        {
+          "keyword": "fastapi",
+          "weight": 0.0802,
+          "direction": "against",
+          "description": "Keyword/Skill 'fastapi' provided strong positive evidence (+0.080) for Software Development."
+        }
+      ],
+      "human_readable_summary": "Predicted as Software Development (confidence 70%) primarily due to: software, software development, development, react, fastapi.",
+      "model_version": "v1.0 (TF-IDF + Multinomial Logistic Regression)"
+    }
+  },
+  {
+    "label": "NOISY (label != predicted)",
+    "student_id": 18,
+    "response": {
+      "student_id": 18,
+      "roll_number": "2021CS1017",
+      "student_name": "Rudra Joshi",
+      "predicted_domain": "Quality Assurance & Testing",
+      "confidence_score": 0.5646,
+      "ground_truth_domain": "Software Development",
+      "is_correct": false,
+      "is_noisy_case": true,
+      "class_probabilities": [
+        {
+          "domain": "Quality Assurance & Testing",
+          "probability": 0.5646
+        },
+        {
+          "domain": "Software Development",
+          "probability": 0.2643
+        },
+        {
+          "domain": "DevOps & Cloud Engineering",
+          "probability": 0.0695
+        },
+        {
+          "domain": "Data Science / AI",
+          "probability": 0.0529
+        },
+        {
+          "domain": "Technical Support & Cybersecurity",
+          "probability": 0.0488
+        }
+      ],
+      "top_contributing_factors": [
+        {
+          "keyword": "test",
+          "weight": 0.0829,
+          "direction": "against",
+          "description": "Keyword/Skill 'test' provided strong positive evidence (+0.083) for Quality Assurance & Testing."
+        },
+        {
+          "keyword": "testing",
+          "weight": 0.0603,
+          "direction": "against",
+          "description": "Keyword/Skill 'testing' provided strong positive evidence (+0.060) for Quality Assurance & Testing."
+        },
+        {
+          "keyword": "suite",
+          "weight": 0.0535,
+          "direction": "against",
+          "description": "Keyword/Skill 'suite' provided strong positive evidence (+0.054) for Quality Assurance & Testing."
+        },
+        {
+          "keyword": "allure",
+          "weight": 0.0527,
+          "direction": "against",
+          "description": "Keyword/Skill 'allure' provided strong positive evidence (+0.053) for Quality Assurance & Testing."
+        },
+        {
+          "keyword": "allure reports",
+          "weight": 0.0527,
+          "direction": "against",
+          "description": "Keyword/Skill 'allure reports' provided strong positive evidence (+0.053) for Quality Assurance & Testing."
+        }
+      ],
+      "human_readable_summary": "Predicted as Quality Assurance & Testing (confidence 56%) primarily due to: test, testing, suite, allure, allure reports. Note: actual placement outcome is Software Development — this student's resume does not fully reflect their true domain, which is expected in 0% of cases where skill signal and outcome diverge.",
+      "model_version": "v1.0 (TF-IDF + Multinomial Logistic Regression)"
+    }
+  }
+]
